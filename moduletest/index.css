@@ -1,0 +1,223 @@
+body{
+    padding: 10px 40px;
+    background-color:rgb(26 28 25);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #B1A592;
+    border-radius: 50px;
+    padding: 5px 6px;
+}
+.leftnav{
+    display: flex;
+    gap: 5px;
+}
+.leftnav p{
+  color: #B1A592;
+  padding: 15px 100px;
+  background-color: #343124;
+  border-radius: 20px;
+}
+.nav-container a{
+    text-decoration: none;
+    padding: 15px 40px;
+    border: 1px solid #B1A592;
+    border-radius: 50px;  
+    color: #B1A592;
+}
+a:hover{
+  background-color: #B1A592;
+  color: #333333;
+}
+.disablednav{
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .nav-container a{
+    display: none;
+  }
+  .nav-item1{
+    display: block !important;
+  }
+  .disablednav{
+    display: block !important;
+  }
+}
+.main{
+    margin-top: 20px;
+    /* display: grid;
+    grid-template-columns: 1.5fr 2fr; */
+}
+ .col1{
+    float: left;
+    width: 35%;
+    padding: 0 5px;
+  }
+  .col2{
+    float: left;
+    width: 65%;
+    padding: 0 5px;
+  } 
+  @media screen and (max-width: 768px) {
+    .col1,
+    .col2{
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+    .col3, .col4{
+    display:block;
+    width: 100%
+    }
+  }
+  /* .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  } */
+  .card-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #DFD6C5;
+    padding: 20px;
+    border-radius: 30px;
+}
+.card{
+  display: block;
+  justify-content: space-evenly;
+}
+#container{
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#container img{
+  display: block;
+  max-width: 100%;
+  /* -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s; */
+  transition: 0.3s;
+}
+.para1{
+    border: 1px solid #323025;
+     border-radius: 50px; 
+     width: 200px;
+      padding: 5px 0px; 
+      text-align: center;
+     color: #323025;
+     font-family: 'Inter', sans-serif;
+     font-size: 15px;
+     margin-bottom: 10px;;
+}
+ h3{
+    font-size: 20px;
+    display: inline-block;
+    text-decoration-line: underline; 
+    color: #333333;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.card-item{
+   border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px 0px;
+}
+.card-item p{
+    color: #323025;;
+    font-family: 'Inter', sans-serif;
+}
+.card-container2{
+    background-color: #8E886D; 
+    border-radiuS: 30px;
+    padding: 10px;
+}
+.card2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text{
+    margin: 0;
+    padding: 2px;
+    font-family: 'Inter', sans-serif;
+}
+
+.col3{
+    float: left;
+    width: 50%;
+    padding: 15px 5px;
+  }
+  .col4{
+    float: left;
+    width: 50%;
+    padding: 15px 5px;
+  }
+ h2{
+   font-family: 'Inter', sans-serif;
+    display: inline-block;
+    text-decoration-line: underline; 
+    color: #333333;
+    font-size: 50px;
+ }
+  .card-container3{
+    display: inline-block;
+    justify-content: space-evenly;
+    background: #916E58;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0;
+  }
+  .card-container3 h2{
+    margin-bottom: 20px;
+  }
+  .card-container3 img{
+    display: block;
+    max-width: 100%;
+  }
+  .card-container4{
+    display: block;
+    background: #B1A48E;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0;
+  }
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+.lasth2{
+    /* margin-top: 80px; */
+    font-size: 30px;
+    margin-bottom: 20px; 
+   }
+   .card-container4 .text{
+    margin-bottom: 30px; 
+   }
+#container:hover img{
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+.end{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+  border-top: 3px solid black;
+  border-bottom-width: 10px;
+  border-bottom-color:  black;
+  border-bottom-style: double;
+}
